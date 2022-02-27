@@ -60,5 +60,5 @@ sudo apt install -y docker.io
 sudo docker pull rustscan/rustscan
 
 << COMMENTOUT
-alias rustscan='docker run -it --rm --name rustscan rustscan/rustscan:1.10.0'
+alias rustscan='sudo docker run -it --rm --name rustscan rustscan/rustscan:1.10.0'
 COMMENTOUT
