@@ -53,7 +53,7 @@ python3 -m pip install angr
 
 sudo gem install one_gadget evil-winrm
 
-sudo sh
+sudo sh -c "$(curl -fsSL https://get.docker.com/)"
 
 sudo docker pull rustscan/rustscan:2.0.0
 
