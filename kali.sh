@@ -1,5 +1,5 @@
 sudo apt-get update
-sudo apt-get install zsh ruby git vim openjdk-11-jdk openjdk-11-jre seclists exiftool -y
+sudo apt-get install zsh ruby git vim openjdk-11-jdk openjdk-11-jre seclists exiftool gobuster golang-go -y
 
 cd $HOME
 
@@ -52,11 +52,5 @@ sudo apt-get install python3-dev libffi-dev build-essential virtualenvwrapper -y
 python3 -m pip install angr
 
 sudo gem install one_gadget evil-winrm
-
-sudo sh -c "$(curl -fsSL https://get.docker.com/)"
-
-sudo docker pull rustscan/rustscan:2.0.0
-
-sudo apt-get install gobuster golang-go -y
 
 go get -u github.com/ffuf/ffuf
