@@ -54,3 +54,7 @@ python3 -m pip install angr
 sudo gem install one_gadget evil-winrm
 
 go get -u github.com/ffuf/ffuf
+
+sudo apt install -y docker.io
+
+sudo docker pull rustscan/rustscan
