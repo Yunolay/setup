@@ -57,6 +57,10 @@ go get -u github.com/ffuf/ffuf
 
 sudo apt install -y docker.io
 
+cd /usr/share/wordlist
+sudo git clone https://github.com/fuzzdb-project/fuzzdb
+sudo gzip -d rockyou.txt.gz
+
 << COMMENTOUT
 alias rustscan='sudo docker run -it --rm --name rustscan rustscan/rustscan:1.10.0'
 COMMENTOUT
