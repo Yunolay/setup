@@ -1,4 +1,4 @@
-sudo apt-get update
+sudo apt-get update -y
 sudo apt-get install zsh ruby git vim openjdk-11-jdk openjdk-11-jre seclists exiftool gobuster golang-go code-oss -y
 
 cd $HOME
