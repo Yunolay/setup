@@ -37,6 +37,12 @@ cd impacket
 python3 -m pip install .
 
 cd $HOME
+cd tools
+git clone https://github.com/Yunolay/msfvenom_maker
+cd msfvenom_maker
+cp msfvenom_maker ~/bin
+
+cd $HOME
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
 sudo apt-get install apt-transport-https
 echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
@@ -62,5 +68,6 @@ sudo git clone https://github.com/fuzzdb-project/fuzzdb
 sudo gzip -d rockyou.txt.gz
 
 << COMMENTOUT
+export PATH=$PATH:$HOME/bin
 alias rustscan='sudo docker run -it --rm --name rustscan rustscan/rustscan:1.10.0'
 COMMENTOUT
