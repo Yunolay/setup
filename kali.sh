@@ -45,6 +45,7 @@ cp msfvenom_maker ~/bin
 cd $HOME
 cd tools
 wget https://jitpack.io/com/github/frohoff/ysoserial/master-SNAPSHOT/ysoserial-master-SNAPSHOT.jar
+mv ysoserial-master-SNAPSHOT.jar ysoserial.jar
 
 cd $HOME
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
