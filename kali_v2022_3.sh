@@ -1,20 +1,17 @@
 sudo apt-get update -y
-sudo apt-get install zsh ruby git vim openjdk-11-jdk openjdk-11-jre seclists exiftool gobuster golang-go code-oss -y
+sudo apt-get install zsh ruby git vim openjdk-11-jdk openjdk-11-jre seclists exiftool gobuster golang-go code-oss  python3 python3-pip python3-dev git libssl-dev libffi-dev build-essentia -y
 
 cd $HOME
-
-sudo apt-get update
-sudo apt-get install python3 python3-pip python3-dev git libssl-dev libffi-dev build-essential -y
 sudo python3 -m pip install --upgrade pip
 sudo python3 -m pip install --upgrade pwntools
 
 cd $HOME
-
 mkdir bin
 cd bin
 wget https://github.com/0vercl0k/rp/releases/download/v1/rp-lin-x64
 mv rp-lin-x64 rp
 chmod +x rp
+
 cd $HOME
 git clone https://github.com/pwndbg/pwndbg
 cd pwndbg
@@ -22,8 +19,6 @@ cd pwndbg
 
 cd $HOME
 mkdir tools
-
-cd $HOME
 cd tools
 git clone https://github.com/radareorg/radare2
 cd radare2
@@ -40,7 +35,7 @@ cd $HOME
 cd tools
 git clone https://github.com/Yunolay/msfvenom_maker
 cd msfvenom_maker
-cp msfvenom_maker ~/bin
+ln -s ~/tools/msfvenom_maker/msfvenom_maker ~/bin/msfvenom_maker
 
 cd $HOME
 cd tools
@@ -55,9 +50,9 @@ sudo apt-get update -y
 sudo apt-get install sublime-text -y
 
 cd $HOME
-wget https://github.com/NationalSecurityAgency/ghidra/releases/download/Ghidra_10.1.2_build/ghidra_10.1.2_PUBLIC_20220125.zip
-unzip ghidra_10.1.2_PUBLIC_20220125.zip
-rm ghidra_10.1.2_PUBLIC_20220125.zip
+wget https://github.com/NationalSecurityAgency/ghidra/releases/download/Ghidra_10.2_build/ghidra_10.2_PUBLIC_20221101.zip
+unzip ghidra_10.2_PUBLIC_20221101.zip
+rm ghidra_10.2_PUBLIC_20221101.zip
 
 sudo apt-get install python3-dev libffi-dev build-essential virtualenvwrapper -y
 python3 -m pip install angr
