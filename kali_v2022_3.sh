@@ -55,7 +55,6 @@ go mod download golang.org/x/sys
 go mod download github.com/ugorji/go
 ./Install.sh
 make
-./teamserver -h
 
 cd $HOME
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
